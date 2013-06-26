@@ -1,6 +1,7 @@
 package com.n11.rovers;
 
 import com.n11.rovers.models.Coordinates;
+import com.n11.rovers.models.Direction;
 import com.n11.rovers.models.Plateau;
 
 import junit.framework.Test;
@@ -31,14 +32,6 @@ public class AppTest
         return new TestSuite( AppTest.class );
     }
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
-
     public void testCoordinates()
     {
         Coordinates coords = new Coordinates(5, 5);
@@ -53,5 +46,13 @@ public class AppTest
 
         assertEquals(5, plateau.getMaxCoordinates().getX());
         assertEquals(5, plateau.getMaxCoordinates().getY());
+    }
+    
+    public void testDirection() {
+        
+        assertEquals(Direction.NORTH, Direction.EAST.onLeft());
+        assertEquals(Direction.WEST, Direction.NORTH.onLeft());
+        assertEquals(Direction.SOUTH, Direction.WEST.onLeft());
+        assertEquals(Direction.EAST, Direction.SOUTH.onLeft());
     }
 }

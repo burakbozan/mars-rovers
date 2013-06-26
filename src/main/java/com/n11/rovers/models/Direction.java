@@ -2,7 +2,26 @@ package com.n11.rovers.models;
 
 public enum Direction {
 
-    NORTH("N"), SOUTH("S"), WEST("W"), EAST("E");
+    NORTH("N") {
+        public Direction onLeft() {
+            return WEST;
+        }
+    },
+    SOUTH("S") {
+        public Direction onLeft() {
+            return EAST;
+        }
+    },
+    WEST("W") {
+        public Direction onLeft() {
+            return SOUTH;
+        }
+    },
+    EAST("E") {
+        public Direction onLeft() {
+            return NORTH;
+        }
+    };
 
     private String directionCode;
 
@@ -12,5 +31,9 @@ public enum Direction {
 
     public String getDirectionCode() {
         return directionCode;
+    }
+
+    public Direction onLeft() {
+        return this;
     }
 }
