@@ -33,7 +33,5 @@ public enum Direction {
         return directionCode;
     }
 
-    public Direction onLeft() {
-        return this;
-    }
+    public abstract Direction onLeft();
 }
