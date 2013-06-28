@@ -87,4 +87,12 @@ public class AppTest
         assertEquals(new Coordinates(0, -1), Direction.SOUTH.onForward());
         assertEquals(new Coordinates(0, 1), Direction.NORTH.onForward());
     }
+
+    public void testDirectionGet()
+    {
+        assertEquals(Direction.NORTH, Direction.get("N"));
+        assertEquals(Direction.WEST, Direction.get("W"));
+        assertEquals(Direction.SOUTH, Direction.get("S"));
+        assertEquals(Direction.EAST, Direction.get("E"));
+    }
 }

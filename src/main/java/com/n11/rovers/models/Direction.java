@@ -1,5 +1,8 @@
 package com.n11.rovers.models;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public enum Direction {
 
     NORTH("N") {
@@ -39,7 +42,12 @@ public enum Direction {
         }
     };
 
-    private String directionCode;
+    private final String directionCode;
+    private static final Map<String, Direction> lookup = new HashMap<String, Direction>();
+    static {
+        for(Direction d: Direction.values())
+            lookup.put(d.getDirectionCode(), d);
+    }
 
     private Direction(String directionCode) {
         this.directionCode = directionCode;
@@ -47,6 +55,10 @@ public enum Direction {
 
     public String getDirectionCode() {
         return directionCode;
+    }
+
+    public static Direction get(String directionCode) {
+        return lookup.get(directionCode);
     }
 
     public abstract Direction onLeft();
