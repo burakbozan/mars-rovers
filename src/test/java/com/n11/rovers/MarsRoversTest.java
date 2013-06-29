@@ -11,16 +11,19 @@ import com.n11.rovers.models.Plateau;
 import com.n11.rovers.models.Rover;
 import com.n11.rovers.models.RoverKAFA500;
 
-/**
- * Mars-Rovers
- *
- */
-public class App 
+import junit.framework.TestCase;
+
+public class MarsRoversTest 
+    extends TestCase
 {
-    public static void main( String[] args ) throws RoverNotSetException,
-        OutOfPlateauException, CommandInitializationException, PlateauInitializationException
+    public MarsRoversTest( String testName )
     {
-        System.out.println("===========");
+        super( testName );
+    }
+
+    public void testMarsRovers() throws PlateauInitializationException, RoverNotSetException, OutOfPlateauException, CommandInitializationException
+    {
+    	System.out.println("===========");
         System.out.println("Test Input:");
         System.out.println("5 5");
         System.out.println("1 2 N");
@@ -32,7 +35,7 @@ public class App
 
         Plateau plateau = new Plateau(new Coordinates(5, 5));
         Rover rover = new RoverKAFA500(new Coordinates(1, 2), Direction.get("N"), plateau);
-
+        
         rover.execute(CommandFactory.createCommand("L"));
         rover.execute(CommandFactory.createCommand("M"));
         rover.execute(CommandFactory.createCommand("L"));
@@ -42,11 +45,13 @@ public class App
         rover.execute(CommandFactory.createCommand("L"));
         rover.execute(CommandFactory.createCommand("M"));
         rover.execute(CommandFactory.createCommand("M"));
-
+        
         System.out.println(rover.displayPosition());
-
+        
+        assertEquals("1 3 N", rover.displayPosition());
+        
         Rover rover2 = new RoverKAFA500(new Coordinates(3, 3), Direction.get("E"), plateau);
-
+        
         rover2.execute(CommandFactory.createCommand("M"));
         rover2.execute(CommandFactory.createCommand("M"));
         rover2.execute(CommandFactory.createCommand("R"));
@@ -57,8 +62,10 @@ public class App
         rover2.execute(CommandFactory.createCommand("R"));
         rover2.execute(CommandFactory.createCommand("R"));
         rover2.execute(CommandFactory.createCommand("M"));
-
+        
         System.out.println(rover2.displayPosition());
         System.out.println("===========");
+
+        assertEquals("5 1 E", rover2.displayPosition());
     }
 }
