@@ -1,7 +1,5 @@
 package com.n11.rovers.models;
 
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.List;
 
