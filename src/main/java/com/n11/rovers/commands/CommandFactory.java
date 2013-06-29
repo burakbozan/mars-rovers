@@ -6,16 +6,16 @@ import java.util.Set;
 
 import org.reflections.Reflections;
 
-import com.n11.rovers.exception.CommandInitializeException;
+import com.n11.rovers.exception.CommandInitializationException;
 
 public class CommandFactory {
 
-    public static Command createCommand(String commandCode) throws CommandInitializeException {
-        return (Command) getCommandByCode(commandCode);
+    public static RoverCommand createCommand(String commandCode) throws CommandInitializationException {
+        return (RoverCommand) getCommandByCode(commandCode);
     }
 
     // TODO Refactor this
-    private static Object getCommandByCode(String commandCode) throws CommandInitializeException {
+    private static Object getCommandByCode(String commandCode) throws CommandInitializationException {
         Object obj = null;
 
         Reflections reflections = new Reflections("com.n11.rovers.commands");
@@ -43,7 +43,7 @@ public class CommandFactory {
                     break;
                 }
             } catch (Exception e) {
-                throw new CommandInitializeException();
+                throw new CommandInitializationException();
             }
         }
 

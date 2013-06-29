@@ -3,9 +3,7 @@ package com.n11.rovers;
 import com.n11.rovers.models.Coordinates;
 import com.n11.rovers.models.Direction;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
 public class DirectionTest extends TestCase
 {
@@ -15,10 +13,6 @@ public class DirectionTest extends TestCase
         super( testName );
     }
 
-    public static Test suite()
-    {
-        return new TestSuite( DirectionTest.class );
-    }
     public void testDirectionOnLeft()
     {
         assertEquals(Direction.NORTH, Direction.EAST.onLeft());

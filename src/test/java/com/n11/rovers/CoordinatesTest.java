@@ -6,21 +6,13 @@ import java.lang.reflect.Method;
 import com.n11.rovers.models.Coordinates;
 import com.n11.rovers.models.Direction;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
 
-public class CoordinatesTest 
-    extends TestCase
+public class CoordinatesTest extends TestCase
 {
     public CoordinatesTest( String testName )
     {
         super( testName );
-    }
-
-    public static Test suite()
-    {
-        return new TestSuite( CoordinatesTest.class );
     }
 
     public void testCoordinates()
