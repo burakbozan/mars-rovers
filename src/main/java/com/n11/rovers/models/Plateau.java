@@ -15,7 +15,7 @@ public class Plateau implements Listener{
         if(maxCoordinates.getX() < 0 || maxCoordinates.getY() < 0)
             throw new PlateauInitializationException("Coordinates must be higher than zero!");
 
-        this.surface = new boolean [maxCoordinates.getX()][maxCoordinates.getY()];
+        this.surface = new boolean [maxCoordinates.getX() + 1][maxCoordinates.getY() + 1];
     }
 
     public boolean[][] getSurface() {
