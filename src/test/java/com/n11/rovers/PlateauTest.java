@@ -23,8 +23,8 @@ public class PlateauTest extends TestCase
         Coordinates coords = new Coordinates(5, 5);
         Plateau plateau = new Plateau(coords);
 
-        assertEquals(5, plateau.getSurface().length);
-        assertEquals(5, plateau.getSurface().length);
+        assertEquals(6, plateau.getSurface().length);
+        assertEquals(6, plateau.getSurface().length);
         
         assertEquals(false, plateau.getSurface()[0][0]);
     }
