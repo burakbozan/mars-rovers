@@ -1,4 +1,4 @@
-package com.n11.rovers.exception;
+package com.blackburn.rovers.exception;
 
 public class PlateauInitializationException extends Exception{
 

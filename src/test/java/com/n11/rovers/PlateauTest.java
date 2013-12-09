@@ -1,11 +1,11 @@
 package com.n11.rovers;
 
 
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.PlateauInitializationException;
-import com.n11.rovers.listener.ChangeEvent;
-import com.n11.rovers.models.Coordinates;
-import com.n11.rovers.models.Plateau;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.PlateauInitializationException;
+import com.blackburn.rovers.listener.ChangeEvent;
+import com.blackburn.rovers.models.Coordinates;
+import com.blackburn.rovers.models.Plateau;
 
 import junit.framework.TestCase;
 

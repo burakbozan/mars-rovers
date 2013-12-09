@@ -2,11 +2,11 @@ package com.n11.rovers;
 
 import java.util.List;
 
-import com.n11.rovers.commands.MarsRover;
-import com.n11.rovers.exception.CommandInitializationException;
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.PlateauInitializationException;
-import com.n11.rovers.exception.RoverNotSetException;
+import com.blackburn.rovers.commands.MarsRover;
+import com.blackburn.rovers.exception.CommandInitializationException;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.PlateauInitializationException;
+import com.blackburn.rovers.exception.RoverNotSetException;
 
 import junit.framework.TestCase;
 

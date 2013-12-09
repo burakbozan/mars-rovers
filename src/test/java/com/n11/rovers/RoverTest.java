@@ -1,13 +1,13 @@
 package com.n11.rovers;
 
-import com.n11.rovers.commands.CommandFactory;
-import com.n11.rovers.exception.CommandInitializationException;
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.RoverNotSetException;
-import com.n11.rovers.models.Coordinates;
-import com.n11.rovers.models.Direction;
-import com.n11.rovers.models.Rover;
-import com.n11.rovers.models.RoverKAFA500;
+import com.blackburn.rovers.commands.CommandFactory;
+import com.blackburn.rovers.exception.CommandInitializationException;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.RoverNotSetException;
+import com.blackburn.rovers.models.Coordinates;
+import com.blackburn.rovers.models.Direction;
+import com.blackburn.rovers.models.Rover;
+import com.blackburn.rovers.models.RoverKAFA500;
 
 import junit.framework.TestCase;
 

@@ -1,6 +1,6 @@
-package com.n11.rovers.listener;
+package com.blackburn.rovers.listener;
 
-import com.n11.rovers.models.Coordinates;
+import com.blackburn.rovers.models.Coordinates;
 
 public class ChangeEvent {
 	private Object source;

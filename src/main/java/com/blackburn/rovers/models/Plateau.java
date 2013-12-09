@@ -1,9 +1,9 @@
-package com.n11.rovers.models;
+package com.blackburn.rovers.models;
 
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.PlateauInitializationException;
-import com.n11.rovers.listener.ChangeEvent;
-import com.n11.rovers.listener.Listener;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.PlateauInitializationException;
+import com.blackburn.rovers.listener.ChangeEvent;
+import com.blackburn.rovers.listener.Listener;
 
 public class Plateau implements Listener{
 

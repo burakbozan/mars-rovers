@@ -1,18 +1,18 @@
-package com.n11.rovers.commands;
+package com.blackburn.rovers.commands;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-import com.n11.rovers.exception.CommandInitializationException;
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.PlateauInitializationException;
-import com.n11.rovers.exception.RoverNotSetException;
-import com.n11.rovers.models.Coordinates;
-import com.n11.rovers.models.Direction;
-import com.n11.rovers.models.Plateau;
-import com.n11.rovers.models.Rover;
-import com.n11.rovers.models.RoverKAFA500;
+import com.blackburn.rovers.exception.CommandInitializationException;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.PlateauInitializationException;
+import com.blackburn.rovers.exception.RoverNotSetException;
+import com.blackburn.rovers.models.Coordinates;
+import com.blackburn.rovers.models.Direction;
+import com.blackburn.rovers.models.Plateau;
+import com.blackburn.rovers.models.Rover;
+import com.blackburn.rovers.models.RoverKAFA500;
 
 public class MarsRover {
 

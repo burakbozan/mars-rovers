@@ -1,6 +1,6 @@
-package com.n11.rovers.commands;
+package com.blackburn.rovers.commands;
 
-import com.n11.rovers.exception.RoverNotSetException;
+import com.blackburn.rovers.exception.RoverNotSetException;
 
 public class MoveForwardCommand extends RoverCommand {
 

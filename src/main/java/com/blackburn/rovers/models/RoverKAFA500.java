@@ -1,6 +1,6 @@
-package com.n11.rovers.models;
+package com.blackburn.rovers.models;
 
-import com.n11.rovers.listener.Listener;
+import com.blackburn.rovers.listener.Listener;
 
 public class RoverKAFA500 extends Rover {
 

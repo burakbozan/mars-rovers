@@ -3,8 +3,8 @@ package com.n11.rovers;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import com.n11.rovers.models.Coordinates;
-import com.n11.rovers.models.Direction;
+import com.blackburn.rovers.models.Coordinates;
+import com.blackburn.rovers.models.Direction;
 
 import junit.framework.TestCase;
 

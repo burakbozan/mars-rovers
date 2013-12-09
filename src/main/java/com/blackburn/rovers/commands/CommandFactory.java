@@ -1,4 +1,4 @@
-package com.n11.rovers.commands;
+package com.blackburn.rovers.commands;
 
 import java.lang.reflect.Field;
 import java.util.Iterator;
@@ -6,7 +6,7 @@ import java.util.Set;
 
 import org.reflections.Reflections;
 
-import com.n11.rovers.exception.CommandInitializationException;
+import com.blackburn.rovers.exception.CommandInitializationException;
 
 public class CommandFactory {
 

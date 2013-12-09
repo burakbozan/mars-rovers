@@ -1,4 +1,4 @@
-package com.n11.rovers.models;
+package com.blackburn.rovers.models;
 
 import java.util.HashMap;
 import java.util.Map;

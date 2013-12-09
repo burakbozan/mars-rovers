@@ -1,6 +1,6 @@
-package com.n11.rovers.commands;
+package com.blackburn.rovers.commands;
 
-import com.n11.rovers.models.Rover;
+import com.blackburn.rovers.models.Rover;
 
 abstract public class RoverCommand implements Command{
 

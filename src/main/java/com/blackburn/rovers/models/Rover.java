@@ -1,13 +1,13 @@
-package com.n11.rovers.models;
+package com.blackburn.rovers.models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.n11.rovers.commands.RoverCommand;
-import com.n11.rovers.exception.OutOfPlateauException;
-import com.n11.rovers.exception.RoverNotSetException;
-import com.n11.rovers.listener.ChangeEvent;
-import com.n11.rovers.listener.Listener;
+import com.blackburn.rovers.commands.RoverCommand;
+import com.blackburn.rovers.exception.OutOfPlateauException;
+import com.blackburn.rovers.exception.RoverNotSetException;
+import com.blackburn.rovers.listener.ChangeEvent;
+import com.blackburn.rovers.listener.Listener;
 
 public abstract class Rover {
 
